@@ -1,5 +1,7 @@
 declare module 'histogram' {
-  type HistogramOptions = {
+  import { ChartOptions } from './chart'
+
+  export type HistogramOptions = {
     width?: number
     height?: number
     pointChar?: string
@@ -11,6 +13,7 @@ declare module 'histogram' {
   function histogram(
     data: number[],
     opts: HistogramOptions = {},
+    chartOpts: ChartOptions = {},
   ): string
 
   export default histogram

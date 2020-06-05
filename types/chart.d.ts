@@ -1,5 +1,5 @@
 declare module 'chart' {
-  type ChartOptions = {
+  export type ChartOptions = {
     width?: number
     height?: number
     pointChar?: string

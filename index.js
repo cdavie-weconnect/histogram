@@ -10,15 +10,16 @@ var chart = require('chart');
  *
  * @param {Array} data
  * @param {Object} [opts]
+ * @param {Object} [chartOpts]
  * @return {String}
  * @api public
  */
 
-module.exports = function(data, opts){
+module.exports = function(data, opts, chartOpts){
   var opts = opts || {};
   var bins = opts.bins || 50;
   data = bin(data, bins, opts);
-  return chart(data);
+  return chart(data, chartOpts);
 };
 
 /**
