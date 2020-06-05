@@ -13,6 +13,8 @@
     "terminal",
     "histogram"
   ],
+  "main": "./index.js",
+  "types": "./types/histogram.d.ts",
   "dependencies": {
     "chart": "git://github.com/jstrace/chart"
   },
