@@ -2,12 +2,9 @@ declare module 'histogram' {
   import { ChartOptions } from './chart'
 
   export type HistogramOptions = {
-    width?: number
-    height?: number
-    pointChar?: string
-    negativePointChar?: string
-    axisChar?: string
-    padding?: number
+    bins?: number
+    min?: number
+    max?: number
   }
 
   function histogram(
